@@ -17,7 +17,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/leapofazzam123/termux-plus
 * Modded MESA
 * Apache ANT
 ## How to contribute
-1. Clone [https:///github.com/leapofazzam123/termux-plus-debs](https:///github.com/leapofazzam123/termux-plus-debs).
+1. Clone [https://github.com/leapofazzam123/termux-plus-debs](https://github.com/leapofazzam123/termux-plus-debs).
 2. Put a DEB file in the repo.
 3. Install termux-apt-repo and run `termux-apt-repo /path/to/termux-plus-debs /path/to/termux-plus termux plus`
 4. Commit the changes and make a pull request in both termux-plus-debs and termux-plus.
