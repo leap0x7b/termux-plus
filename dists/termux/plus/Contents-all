@@ -1,0 +1,4 @@
+data/data/com.termux/files/usr/bin/ant                                           ant
+data/data/com.termux/files/usr/share/doc/ant/LICENSE                             ant
+data/data/com.termux/files/usr/share/ant/lib/ant-launcher.jar                    ant
+data/data/com.termux/files/usr/share/ant/lib/ant.jar                             ant

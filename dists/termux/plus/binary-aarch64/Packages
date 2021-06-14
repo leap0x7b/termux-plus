@@ -1,0 +1,301 @@
+Package: alsa-lib-static
+Architecture: aarch64
+Installed-Size: 892
+Maintainer: default
+Version: 1.1.3
+Homepage: http://www.alsa-project.org
+Depends: alsa-lib (= 1.1.3)
+Description: Static libraries for alsa-lib
+Filename: dists/termux/plus/binary-aarch64/alsa-lib-static_1.1.3_aarch64.deb
+Size: 157074
+MD5Sum: 7575e6b1277d8fa4a34841ec3f97feee
+SHA1: 2189abe270e20a0b7f8debe2e34a6ccbd7414e70
+SHA256: a2ce28ad3dc8bd465a961c6cf8492e6dd49c0f708948968a0b91bb109a6ff616
+SHA512: 103cd036dbfa889302db0e39bc539d4381b8fa0aa2b951f4ed37bafff7355abf1688d0cd11cddb468e30c341ab1501057b74e31e0bd19110a05f0122eb700389
+
+Package: alsa-lib
+Architecture: aarch64
+Installed-Size: 1544
+Maintainer: default
+Version: 1.1.3
+Homepage: http://www.alsa-project.org
+Depends: libandroid-shmem
+Description: FIXME:Add description
+Filename: dists/termux/plus/binary-aarch64/alsa-lib_1.1.3_aarch64.deb
+Size: 189810
+MD5Sum: d368936a2058489ad5941f1348324999
+SHA1: df8f9d93ef5cc8b9fcf133569e71e344e028d729
+SHA256: 2ceeed7df4e09585700f64eae847d0f32b74223b4fc57ff1294d3b33f6af7e26
+SHA512: cc96f5760d594401e0e593f93012f8bdd7f12b65a48007bd367d07eb299cdbb0ec6d2b36d4c0bf313ca978480e556da60cf3fbadc2a92a60873faafee85df0fb
+
+Package: geckodriver
+Architecture: aarch64
+Installed-Size: 4612
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 0.29.1
+Homepage: https://github.com/mozilla/geckodriver
+Description: Proxy for using W3C WebDriver-compatible clients to interact with Gecko-based browsers
+Filename: dists/termux/plus/binary-aarch64/geckodriver_0.29.1_aarch64.deb
+Size: 1261312
+MD5Sum: 2c1ffc347cb7c3978d16f3c92445a16d
+SHA1: 4e74195d3e768e5f984d9f518d5dee805521327a
+SHA256: 0180d74db404d38691e031024842acbca099d75f2cdcf7e776ef9f97903ca17f
+SHA512: 7cc00c3709824bf85e1373e3ba2c91585c67475d8d343f101ed47b1aa7651699f7d7fc7699d55311f75fe2afde6926f081ef15fe77c138e074929c5ed0268530
+
+Package: liblorie
+Architecture: aarch64
+Installed-Size: 136
+Maintainer: default
+Version: 0.0.1
+Homepage: https://github.com/twaik/liblorie
+Depends: libandroid-shmem, libwayland, xorg-server
+Description: liblorie
+Filename: dists/termux/plus/binary-aarch64/liblorie_0.0.1_aarch64.deb
+Size: 16456
+MD5Sum: f12141b334f5014d9a10c7a541e4c574
+SHA1: 39d46f21889c345abde9a46e37cb52ccd92dc17c
+SHA256: c9a6abf7821863d84fdfa9b3aed74ddfb7fb87c824cbc2d23ec2c521baf4500b
+SHA512: ba693476955bf23c0b03dbe2d763b5fff99c3e192b6f615aa6bd74db95465d1dc742447738f7a44ab575271c2fad46cf6ee3c052c8c503801689cd0284a6de59
+
+Package: liborc
+Installed-Size: 6364
+Version: 0.4.32
+Priority: optional
+Architecture: aarch64
+Essential: no
+Maintainer: build by mjuned
+Description: The Oil Runtime Compiler for compiling and executing very simple programs that operate on arrays of data
+Filename: dists/termux/plus/binary-aarch64/liborc-0.4.32_aarch64.deb
+Size: 411864
+MD5Sum: 73cd784b47386aaac08914c550d4f2f8
+SHA1: 8978ee0b1487c38b9c0ac3e7ddbb375659ecbd7f
+SHA256: 695b20308775aaf5cdc9ee159cecf4a2dd7f866ea981bed599077a6f995d2bbe
+SHA512: b8343b5aeac292c2be9e1b67476a44f1ed99c0fa6adc632e5644a9ca8c517ac99eac08641c5b9a88a99a218e679ebd8922a7a2f25530c414c7d6cc635756fb3b
+
+Package: libspice-server
+Version: 0.14.91
+Priority: optional
+Architecture: aarch64
+Depends: libopus, liborc, gstreamer, gst-plugins-base, libsasl, libjpeg-turbo, openssl, glib, zlib, liblz4, libpixman
+Essential: no
+Maintainer: build by mjuned
+Description: SPICE server is the library used by the hypervisor in order to share the VM under SPICE protocol
+Filename: dists/termux/plus/binary-aarch64/libspice-server-0.14.91_aarch64.deb
+Size: 1296572
+MD5Sum: ad10aac7551b8986ebd8f58bbefb06be
+SHA1: 089639451672d9ba5da3c9080d52b5cc64cb883e
+SHA256: 88ec83185a1928a6f4282120f4f2cec1e58e9860deed1adae35abe24860bfcaf
+SHA512: 0ee742998ada2574b417866be6dfdbe3090ad31e4192d27266ef28fee33ffba123e2c99d58c133b004a9226741174cbe03b599e87bf0a5fb0938831a114341a3
+
+Package: libwayland-protocols
+Architecture: aarch64
+Installed-Size: 604
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 1.17-4
+Homepage: https://wayland.freedesktop.org/
+Depends: libandroid-support
+Description: Wayland protocols library
+Filename: dists/termux/plus/binary-aarch64/libwayland-protocols_1.17-4_aarch64.deb
+Size: 57038
+MD5Sum: 50894298e1aebcfed191a67556315e64
+SHA1: 02d8345f376cfc5a43d46c0e753398a14cf46f16
+SHA256: 0f8124b441d5b724c8970e7699381010654fef47a74cc90c52282064038859e3
+SHA512: 1ec5a0e43b0e0fb67fd572e2de448f26d1f0306cc15a0b6dfa2ec154694f01199a28f0ff3705953a3a87601e1f20f69fa5f2c2988203fc5f87b90b87adac57d8
+
+Package: libwayland-static
+Architecture: aarch64
+Installed-Size: 668
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 1.19.0
+Homepage: https://wayland.freedesktop.org/
+Depends: libwayland (= 1.19.0)
+Description: Static libraries for libwayland
+Filename: dists/termux/plus/binary-aarch64/libwayland-static_1.19.0_aarch64.deb
+Size: 102732
+MD5Sum: 667da3c595ec71e3f77142f83ca8f43f
+SHA1: 6b1ae986984f76037160490cc258c3d77678a674
+SHA256: 5fe570a7ca8ccdbc236858df27dda4de3681f57df3f7b14a1fb394ab6bf62d9e
+SHA512: 6b587a8a6aba4585ca3d9c70dcea6af064c66e51a9c880af44b311a96b1c2d9a63feb6dacb3eff475445fc03584ecaa7fc04f36db0f37f5c56e76b66909e8c66
+
+Package: libwayland
+Architecture: aarch64
+Installed-Size: 840
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 1.19.0
+Homepage: https://wayland.freedesktop.org/
+Depends: libandroid-support, libffi, libxml2, libexpat
+Description: Wayland protocol library
+Filename: dists/termux/plus/binary-aarch64/libwayland_1.19.0_aarch64.deb
+Size: 107760
+MD5Sum: 72f253f7c598a54a497bdffb635a1b3b
+SHA1: 60c6c17b5fccda5869555bf81c56313cecd74667
+SHA256: 4e49ca37eb0dcf7c0b62425de5c3363e09e5fada66305ed9f0ddefaad6450c8c
+SHA512: 2b398adee6be9230afe709a9b8560ee04af293a91fb46b2de1539f7bc15b011ec5504cccd531a28fa30103121139fc564e0b1538fe80597a1e56c24d1798a9a7
+
+Package: mesa
+Architecture: aarch64
+Installed-Size: 2352
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 17.3.9-33
+Homepage: https://www.mesa3d.org
+Depends: libandroid-shmem, libexpat, libdrm, libx11, libxdamage, libxext, libxml2, libxshmfence, zlib
+Conflicts: libmesa
+Replaces: libmesa
+Description: An open-source implementation of the OpenGL specification
+Filename: dists/termux/plus/binary-aarch64/mesa_17.3.9-33_aarch64.deb
+Size: 270272
+MD5Sum: d342f84cd1dce9fcae1c33e93d167754
+SHA1: 8ee7675b763763cb168719fa7e98b27550107129
+SHA256: 28b5da41ceec23a3f0e15b2ec93bde101e5435411f10d554068a293e0aac73fa
+SHA512: 7a3e1c2c1321d273a98d3f0d98251204fec7098e7f58617d95a0c868792d2d8a844ced512af4f8f4c7ad9662f6f233f440ff583811c330da41c3f8b6a62d9470
+
+Package: qemu-system-aarch64
+Version: 4.2.1
+Priority: optional
+Architecture: aarch64
+Depends: attr, glib, libbz2, libc++, libcap-ng, libcurl, libgcrypt, libiconv, libjpeg-turbo, liblzo, libnfs, libpixman, libpng, libssh, ncurses, resolv-conf, zlib, liborc, libspice-server, qemu-common
+Essential: no
+Maintainer: build by mjuned
+Description: Qemu emulation includes aarch64 and arm system with spice support
+Conflicts: qemu-system-arm-headless, qemu-system-aarch64-headless
+Replaces: qemu-system-aarch64
+Provides: qemu-system-aarch64
+Filename: dists/termux/plus/binary-aarch64/qemu-system-aarch64-4.2.1_aarch64.deb
+Size: 6019224
+MD5Sum: 78837134452ce797960e8a3f6d1f5be2
+SHA1: 3f4674522ca6ebd658fe68df6634de3baf457545
+SHA256: 57402ec29ab0975eb47ebc303ef0dab491646e39729cb186b5e2d5a586b65611
+SHA512: 19b9fcc76e1f9d547af42499b40404a129fa5d4c00ef3768016700471c83e8109ca8ebfab5c2c7e8da73b2a59d5e28e7607a525cfa43b05189bcdf325ef6979a
+
+Package: qemu-system-ppc64
+Version: 4.2.1
+Priority: optional
+Architecture: aarch64
+Depends: attr, glib, libbz2, libc++, libcap-ng, libcurl, libgcrypt, libiconv, libjpeg-turbo, liblzo, libnfs, libpixman, libpng, libssh, ncurses, resolv-conf, zlib, liborc, libspice-server, qemu-common
+Essential: no
+Maintainer: build by mjuned
+Description: Qemu PowerPC 32bit and 64bit Emulation with spice support
+Conflicts: qemu-system-ppc64-headless, qemu-system-ppc64-headless, qemu-system-ppc, qemu-system-ppc-headless
+Replaces: qemu-system-ppc64
+Provides: qemu-system-ppc64
+Filename: dists/termux/plus/binary-aarch64/qemu-system-ppc64_aarch64.deb
+Size: 5322112
+MD5Sum: a66532df3e57536a895aeb9dd30af86c
+SHA1: ffc4c0da120873f4c9810a47df6f395cf1e30d7a
+SHA256: ac4b1bd44f571c4898fc67f02faf144db456ea8d0f99cd7b361bc7bc931cbb3a
+SHA512: 966c7952dfbc00143cbbb51b97383b834be1784547007f4a298ba4a107ba435a3c0430f9ed10081232dcc0f209941edc94b5c53e1daedaab3e6c9a1bffebd383
+
+Package: qemu-system-sparc64
+Version: 4.2.1
+Priority: optional
+Architecture: aarch64
+Depends: attr, glib, libbz2, libc++, libcap-ng, libcurl, libgcrypt, libiconv, libjpeg-turbo, liblzo, libnfs, libpixman, libpng, libssh, ncurses, resolv-conf, zlib, liborc, libspice-server, qemu-common
+Essential: no
+Maintainer: build by mjuned
+Description: Qemu RISCV 32bit and 64bit Emulation with spice support
+Conflicts: qemu-system-riscv64-headless, qemu-system-riscv64-headless, qemu-system-riscv32, qemu-system-riscv32-headless
+Replaces: qemu-system-riscv64
+Provides: qemu-system-riscv64
+Filename: dists/termux/plus/binary-aarch64/qemu-system-riscv64_aarch64.deb
+Size: 4355868
+MD5Sum: 5fbc3925933552f8dad84e9cf0a0f3ab
+SHA1: bea7efce568d9e21f2a629fab8f74a80275a4727
+SHA256: c00ce97a2a8cd444df739bc2d8f63a8f693e70dad1f2ae48f462a79c764f2be0
+SHA512: 60b232486ee64932404116c2422dceb3b7ede0be83cec865aef0b8e841acaca114efcda00d06f6f449d80158d379ece1d36cde7f20b8dc2de5a532d435aba05f
+
+Package: qemu-system-sparc64
+Version: 4.2.1
+Priority: optional
+Architecture: aarch64
+Depends: attr, glib, libbz2, libc++, libcap-ng, libcurl, libgcrypt, libiconv, libjpeg-turbo, liblzo, libnfs, libpixman, libpng, libssh, ncurses, resolv-conf, zlib, liborc, libspice-server, qemu-common
+Essential: no
+Maintainer: build by mjuned
+Description: Qemu SPARC 32bit and 64bit Emulation with spice support
+Conflicts: qemu-system-sparc64-headless, qemu-system-sparc64-headless, qemu-system-sparc, qemu-system-sparc-headless
+Replaces: qemu-system-sparc64
+Provides: qemu-system-sparc64
+Filename: dists/termux/plus/binary-aarch64/qemu-system-sparc64_aarch64.deb
+Size: 3910224
+MD5Sum: 867db1ed201b47f9399796d39f4e2e7c
+SHA1: 4a4f233ed7117b624f67cbd877921c1cefe6b39f
+SHA256: 9faf64708b30067722e031c4f5ba55e9bc117a9e103f7914f9ef1b3edadb919f
+SHA512: 20289855b041b9e84b9bdd2956ac5cb17b2302409409948d18b61c9a0d142afc2aeef2256ac11a6d114dd5f7537883402afe29b5f11b5a022a864ae729b0ab52
+
+Package: qemu-system-x86-64
+Version: 4.2.0
+Priority: optional
+Architecture: aarch64
+Depends: attr, glib, libbz2, libc++, libcap-ng, libcurl, libgcrypt, libiconv, libjpeg-turbo, liblzo, libnfs, libpixman, libpng, libssh, ncurses, resolv-conf, zlib, liborc, libspice-server, qemu-common
+Essential: no
+Maintainer: build by mjuned
+Description: Qemu emulation includes x86_64 and i386 system with spice support
+Conflicts: qemu-system-i386-headless, qemu-system-x86-64-headless, qemu-system-x86-64, qemu-system-i386
+Replaces: qemu-system-x86-64
+Provides: qemu-system-x86-64
+Filename: dists/termux/plus/binary-aarch64/qemu-system-x86-64-4.2_aarch64.deb
+Size: 4754116
+MD5Sum: b70530b3bb7f525eb1b54963b90920c6
+SHA1: 381814e8dfebf510727cf6f8b25a74ee17ca7917
+SHA256: f77f1c24b1a688b6535311192ab71dc0e77ffa9a8084011c53c858426c459aba
+SHA512: c39900aeb67a9eb285017a0dbc5a8d065a6a923f044ae2f25b743a5a4d60a2c972304e1b6e6fdd58953dfdb1d190da2b09c0af5e1d999ee503811e142d889c52
+
+Package: termux-x11
+Architecture: aarch64
+Installed-Size: 48
+Maintainer: default
+Version: 1.0-2
+Homepage: https://github.com/termux/x11-packages
+Depends: libwayland
+Description: Utility to start X11 Termux add-on
+Filename: dists/termux/plus/binary-aarch64/termux-x11_1.0-2_aarch64.deb
+Size: 2636
+MD5Sum: aab9124c80b388a1836528addd5631a3
+SHA1: edfc58d53586686a6522f462810a403ca757f479
+SHA256: 4afcc3dfc87c1c33ea30331219f6ec89a0d1b9f2beca18cb5681f48dd453afc5
+SHA512: c816f48a0ca143185504540704bdd5b28970607adf77d61d8dd419ea675a1a5a942b679083dbed7846f5c49ae73f614befda33992e307864e7a2e2b7323f8b42
+
+Package: xorg-server-static
+Architecture: aarch64
+Installed-Size: 4624
+Maintainer: default
+Version: 1.20.3-1
+Homepage: https://xorg.freedesktop.org/wiki/
+Depends: xorg-server (= 1.20.3-1)
+Description: Static libraries for xorg-server
+Filename: dists/termux/plus/binary-aarch64/xorg-server-static_1.20.3-1_aarch64.deb
+Size: 941636
+MD5Sum: ab94f0a61219df32657d6588572b7a0e
+SHA1: 8ad9bf06525b3bb7fd93fb107442f3b7f6ed703c
+SHA256: bfccba45ab764ea34ea9c11f68e12a6a0d470902012ecb8794615c1906845184
+SHA512: e6c65975e0b05023537b8cd8c39bd6a9dde1b49572aed3c6e46de3fb46c294c1aa162b52f87a1e97babb692edbe3e4b7c0ad785f67217885557533e132d24688
+
+Package: xorg-server
+Architecture: aarch64
+Installed-Size: 3420
+Maintainer: default
+Version: 1.20.3-1
+Homepage: https://xorg.freedesktop.org/wiki/
+Depends: libandroid-shmem, libdrm, libpciaccess, libpixman, libx11, libxau, libxfont2, libxinerama, libxkbfile, libxshmfence, mesa, openssl, xkeyboard-config, xorg-xkbcomp
+Description: Xorg server
+Filename: dists/termux/plus/binary-aarch64/xorg-server_1.20.3-1_aarch64.deb
+Size: 898842
+MD5Sum: 6cb383bb128762a5e4d80ce4e563ae6f
+SHA1: d935b60c2a292da160522fa0e6df9acc752d379a
+SHA256: 5045260c7da249c95d5bd83c36494b69c5d959ec036415afe309a28fbd563f8c
+SHA512: f39ce5c2f3ba303607dd477f672a62e271b7e12fdcb43699472fa0fc3096365aaed870b7aceac1f0241c00417ae2efa4ce07fd6fd2f052383c8c6e5151f6850a
+
+Package: xwayland
+Architecture: aarch64
+Installed-Size: 1540
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 1.20.5-6
+Homepage: https://xorg.freedesktop.org/wiki/
+Depends: libandroid-shmem, libdrm, libpciaccess, libpixman, libx11, libxau, libxfont2, libxinerama, libxkbfile, libxshmfence, mesa, openssl, xkeyboard-config, xorg-xkbcomp, libwayland, libwayland-protocols, libepoxy
+Description: Wayland X11 server
+Filename: dists/termux/plus/binary-aarch64/xwayland_1.20.5-6_aarch64.deb
+Size: 552174
+MD5Sum: 1b29c6d0052ab1c06ef2617ba237142f
+SHA1: ea2dd6c072137dc8fbd4a930a87a143f9482e92a
+SHA256: 3ac86fea36bb3992b6660a67e956d5ae27948ec9cb0ff2d849683cfb9494b5f3
+SHA512: 637f2b43357143394c811cc9740fd1fd308e4163831595ba06cca3e200c6a9e2ef28d778c3dab8d46c357b97c6494c3ee8cf7c8a903c2ab63aeefaca6792c9f0
+

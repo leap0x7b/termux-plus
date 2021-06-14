@@ -1,0 +1,228 @@
+Package: alsa-lib-static
+Architecture: arm
+Installed-Size: 644
+Maintainer: default
+Version: 1.1.3
+Homepage: http://www.alsa-project.org
+Depends: alsa-lib (= 1.1.3)
+Description: Static libraries for alsa-lib
+Filename: dists/termux/plus/binary-arm/alsa-lib-static_1.1.3_arm.deb
+Size: 162022
+MD5Sum: b06df84100a5439c3f04f5f38e11ee3b
+SHA1: bb1e5d560c4ec8144aa9c866077be3c01275af38
+SHA256: f89013ad0aede6ea7e6eede54329b2f2841550587b7bfaed328521d2f36c3c4c
+SHA512: c317bb574f389a313b13e4c44e83fdfdf513482a972d3640ae03093001755027539ffece37ca14fa2dd374fb66a031b10662b71448a9428da080ce2a93fcef6d
+
+Package: alsa-lib
+Architecture: arm
+Installed-Size: 1480
+Maintainer: default
+Version: 1.1.3
+Homepage: http://www.alsa-project.org
+Depends: libandroid-shmem
+Description: FIXME:Add description
+Filename: dists/termux/plus/binary-arm/alsa-lib_1.1.3_arm.deb
+Size: 193620
+MD5Sum: fbc71563078c7a7198ba64cf410ad9ef
+SHA1: 2698d7e12c339f08cc3bab9f8d0cbaab1a76d2e9
+SHA256: 6d2767dcf37eeec568609936fcf0534ac161a690501789ba1cdc80a143cf8511
+SHA512: 6f56f09da896dea5874acdf98c6ad14f8e32f9f3cf6ad64f9ad46a44a4494d04425b62ff421e7fae8ef4ff7797cd8d4012d91447717ac0b0169cf8beb018fc7c
+
+Package: geckodriver
+Architecture: arm
+Installed-Size: 3064
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 0.29.1
+Homepage: https://github.com/mozilla/geckodriver
+Description: Proxy for using W3C WebDriver-compatible clients to interact with Gecko-based browsers
+Filename: dists/termux/plus/binary-arm/geckodriver_0.29.1_arm.deb
+Size: 1240748
+MD5Sum: b5ab953d476a6a2b2ffb77dd506105bb
+SHA1: 1ff3228c5a42f2e50f215f68b11d3e6263adbb5e
+SHA256: 0d26045a65efee5e70e430f368bbc0eb6f851b27c69d11bfc2dff180d361fc49
+SHA512: d4670d0a047777396847cdcfaa9963eb2b8a972d17fb0223a68a10c4e467b02e9ca4095b77a21a20cfc29a748f598f09528ea06309ecd4bf4f6a6d751aa3afa0
+
+Package: liblorie
+Architecture: arm
+Installed-Size: 128
+Maintainer: default
+Version: 0.0.1
+Homepage: https://github.com/twaik/liblorie
+Depends: libandroid-shmem, libwayland, xorg-server
+Description: liblorie
+Filename: dists/termux/plus/binary-arm/liblorie_0.0.1_arm.deb
+Size: 19314
+MD5Sum: 0f7dffa496656efd2307cc737de8872c
+SHA1: a8244268c5bd38480392792b57a3373028d5d97a
+SHA256: 459fd453203f68ed6e47d264eef5fee8570f458a42bb90c89eed6e80020a9a5b
+SHA512: d0d6500b11ca5ba164d153bc84b0542b17a8d4b58923b298c1d2cbc0f3840a0cce9c6190b5ffb597d5c7812c748b38c2d124c3916a0b35c5ed9caf0aedaf363a
+
+Package: liborc
+Version: 0.4.32
+Priority: optional
+Architecture: arm
+Essential: no
+Maintainer: build by mjuned
+Description: The Oil Runtime Compiler for compiling and executing very simple programs that operate on arrays of data
+Filename: dists/termux/plus/binary-arm/liborc-0.4.32_armv7l.deb
+Size: 443916
+MD5Sum: 1c5c9eb3d92f8686d4413969e7996407
+SHA1: d9cd932abbebdf2d2c2f925730a167edc48b2718
+SHA256: f4b9fa03803dd7dcf5049c062fc6a0daff67a7a519bf5f81e8e9243d70be6071
+SHA512: 5612974a1ce1d7013f79d7b5aa3d0ea1c27269af190c2b57a18e451d55804b41739b970cd0b27990c9d719e923c277dd27657609be430f288e87efc7cb11c9ed
+
+Package: libspice-server
+Version: 0.14.91
+Priority: optional
+Architecture: arm
+Depends: libopus, liborc, gstreamer, gst-plugins-base, libsasl, libjpeg-turbo, openssl, glib, zlib, liblz4, libpixman, libiconv
+Essential: no
+Maintainer: build by mjuned
+Description: SPICE server is the library used by the hypervisor in order to share the VM under SPICE protocol
+Filename: dists/termux/plus/binary-arm/libspice-server-0.14.91_armv7l.deb
+Size: 1334244
+MD5Sum: af3a41cf8c62965581856f95f5c7f618
+SHA1: 7f583c0c61e0a95b2f3574595932366ee6413b26
+SHA256: c78b9fdae4c0e6877ba0cb294527fbd70800e88b44ec1021974f1604217b0e85
+SHA512: c24d4490a99d72816af814cbb7ffbdc6e8f361d0788ee3264b63f6df37d42db5552088259bcd24218f35605a9199af025d09c319f856b51f04d55c1d9916cdc3
+
+Package: libwayland-protocols
+Architecture: arm
+Installed-Size: 604
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 1.17-4
+Homepage: https://wayland.freedesktop.org/
+Depends: libandroid-support
+Description: Wayland protocols library
+Filename: dists/termux/plus/binary-arm/libwayland-protocols_1.17-4_arm.deb
+Size: 57020
+MD5Sum: d8d8828c903262d34815e47e7384b3b1
+SHA1: fc7b169a83c49383aae85cd5adc04edb0599934a
+SHA256: 163a8c5e1bea64b2979b3189fcb9c7add52e1e65779d2c23953cec88dce7a6f0
+SHA512: 3e13136fb481fd367b389620e7ae3abbb87856c594edfb395745e718bb27d0d4c94a4372f9fdfad6646f495bc19670272f889c7403bc60927d42cbc42db3cc64
+
+Package: libwayland-static
+Architecture: arm
+Installed-Size: 496
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 1.19.0
+Homepage: https://wayland.freedesktop.org/
+Depends: libwayland (= 1.19.0)
+Description: Static libraries for libwayland
+Filename: dists/termux/plus/binary-arm/libwayland-static_1.19.0_arm.deb
+Size: 100628
+MD5Sum: 3d6e8d2fb0773007b55e9769f6213408
+SHA1: dd2bd52403f9d34e9bb4176167571db251ecffc0
+SHA256: 9aa73ddc4fd0d52e3ba775d01a817b8be71764d79381397626025e3a9db7a69b
+SHA512: f7437143aa75b2cc5af7d29ba8bba411673c11b3e093ab231aaa6d9076a059cd9a91b8030fc0d3a36a4e4fad5bbae2449299a97c5323cfc3041966c16aadf601
+
+Package: libwayland
+Architecture: arm
+Installed-Size: 808
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 1.19.0
+Homepage: https://wayland.freedesktop.org/
+Depends: libandroid-support, libffi, libxml2, libexpat
+Description: Wayland protocol library
+Filename: dists/termux/plus/binary-arm/libwayland_1.19.0_arm.deb
+Size: 107540
+MD5Sum: d3b76d7b123efece508021b497a380b7
+SHA1: 89aef0f7edf0d0fa9beb8b0d8f74f9aa716de56d
+SHA256: b413641e533a015ccedc7b666692e288d2731bbc4a75c719432f530e8913d8bf
+SHA512: 47c75ffd1b7320963a24f16eb8c942053d85aee21bf9c92d3752b614448c6658d0a1ee9c42d725f2cec6b8bbef25e5b0a5164ff97e908eb49d754d71ee5cb56f
+
+Package: mesa
+Architecture: arm
+Installed-Size: 2228
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 17.3.9-33
+Homepage: https://www.mesa3d.org
+Depends: libandroid-shmem, libexpat, libdrm, libx11, libxdamage, libxext, libxml2, libxshmfence, zlib
+Conflicts: libmesa
+Replaces: libmesa
+Description: An open-source implementation of the OpenGL specification
+Filename: dists/termux/plus/binary-arm/mesa_17.3.9-33_arm.deb
+Size: 260892
+MD5Sum: 3b8f5973cab0375d0c47a8c0253000b3
+SHA1: 58538aa6ed21a2057c409de7bb50b81983700e46
+SHA256: 2a25e7a01f06df09c3a614edf863722b7e92c7dad4e67fb58adc488e1d4d7306
+SHA512: 0e83d753508e4adec5e6f0b29094249124482a6530888fcb316f4ccbf5da72adf93713958dfaa550a0fba8c13ae14c4834d426fab2d88c61c28792df6726e7e4
+
+Package: qemu-system-x86-64
+Version: 4.2.0
+Priority: optional
+Architecture: arm
+Depends: attr, glib, libbz2, libc++, libcap-ng, libcurl, libgcrypt, libiconv, libjpeg-turbo, liblzo, libnfs, libpixman, libpng, libssh, ncurses, resolv-conf, zlib, liborc, libspice-server, qemu-common
+Essential: no
+Maintainer: build by mjuned
+Description: Qemu emulation includes x86_64 and i386 system with spice support
+Conflicts: qemu-system-i386-headless, qemu-system-x86-64-headless, qemu-system-x86-64, qemu-system-i386
+Replaces: qemu-system-x86-64
+Provides: qemu-system-x86-64
+Filename: dists/termux/plus/binary-arm/qemu-system-x86-64-4.2.1_armv7l.deb
+Size: 5160384
+MD5Sum: 17e9c5544ecf5225ce8ba5730197d195
+SHA1: 6286ae72a99924462a1e3f4a09b3d66a0aec61c6
+SHA256: b3d95acd8b850d0f8696dfc3d861e55260e9e6f14583d0f7a96301febb9d3ed6
+SHA512: 0c22c241aa1fa74df9a97a391f8775546989b33ade6e047944f3d521e63adf83dc33d370eb3bdcd3d9d375909e6ae4f469d38606c2ad027f22f0f4bab9fddb06
+
+Package: termux-x11
+Architecture: arm
+Installed-Size: 48
+Maintainer: default
+Version: 1.0-2
+Homepage: https://github.com/termux/x11-packages
+Depends: libwayland
+Description: Utility to start X11 Termux add-on
+Filename: dists/termux/plus/binary-arm/termux-x11_1.0-2_arm.deb
+Size: 2646
+MD5Sum: f6ed8b2c6f39af301e00f48736d232fc
+SHA1: 6a3f1f432f51a4a848065a4d67a28bced2f525c6
+SHA256: c3aa987fb9936f2969d8cb29d0d103436f12a0ea8b7e1b99b5406abe4386a5e0
+SHA512: ac1817dc062bd39cbb64ac42f0aab093e2b26b452679168fe7296bc4530b2a23c11bad6d8737031ae692a96885be4daa829f10944cec102c9433560ed40bc60c
+
+Package: xorg-server-static
+Architecture: arm
+Installed-Size: 3156
+Maintainer: default
+Version: 1.20.3-1
+Homepage: https://xorg.freedesktop.org/wiki/
+Depends: xorg-server (= 1.20.3-1)
+Description: Static libraries for xorg-server
+Filename: dists/termux/plus/binary-arm/xorg-server-static_1.20.3-1_arm.deb
+Size: 921474
+MD5Sum: 34382168b3d9172c258c6f83ac9e1942
+SHA1: 6e94e783759c461f678f75828ae1283b45adc1cf
+SHA256: 4c49fb324e05b6fc1c3e0df559fb329e9e938383c45bd050a564c90f28fd1507
+SHA512: ff175eddf190b3c750006290a710e42b61235b2305c1f7e830c820cb74275a672132d6c68f3862bfae2d53114fdc4b58d50d080d52c548aed163d3f858716b29
+
+Package: xorg-server
+Architecture: arm
+Installed-Size: 2932
+Maintainer: default
+Version: 1.20.3-1
+Homepage: https://xorg.freedesktop.org/wiki/
+Depends: libandroid-shmem, libdrm, libpciaccess, libpixman, libx11, libxau, libxfont2, libxinerama, libxkbfile, libxshmfence, mesa, openssl, xkeyboard-config, xorg-xkbcomp
+Description: Xorg server
+Filename: dists/termux/plus/binary-arm/xorg-server_1.20.3-1_arm.deb
+Size: 894370
+MD5Sum: 65d7d247128d016825ebcbb8f0aa3a6c
+SHA1: 53766dc6fd7e3470c0d7211b5c43810a4b62bf7f
+SHA256: cd6308619c924ac94c28a21ce0f6ba986543b54912fe683458f13f2c0a709445
+SHA512: 6476a2c3da0587df0b9084792b682f23c3770a360a04a16b94eb055d0e32d4a7b773f5c474ac1b7338f4285399e90f9dd88367af40fef9d4e37ac83bbf8e4a5f
+
+Package: xwayland
+Architecture: arm
+Installed-Size: 1212
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 1.20.5-6
+Homepage: https://xorg.freedesktop.org/wiki/
+Depends: libandroid-shmem, libdrm, libpciaccess, libpixman, libx11, libxau, libxfont2, libxinerama, libxkbfile, libxshmfence, mesa, openssl, xkeyboard-config, xorg-xkbcomp, libwayland, libwayland-protocols, libepoxy
+Description: Wayland X11 server
+Filename: dists/termux/plus/binary-arm/xwayland_1.20.5-6_arm.deb
+Size: 546042
+MD5Sum: af0a4ba4ab353de67444b2017ffd97b8
+SHA1: 141b437d633fc46a5f17ec9f640663f9934a9e1b
+SHA256: 34318d8c75ea42bb8ce48bfdf6b66a8bf905225bab096f5bfcd6ba06aa8e5eb6
+SHA512: e51f0b7bf7a6cc43e5fd38078033507995e16548e7fb9315fa86f900c1bbc7e45eda9ec620f616e6b1c8426503853cec1438c8df3c97354a4c86462438e04821
+
