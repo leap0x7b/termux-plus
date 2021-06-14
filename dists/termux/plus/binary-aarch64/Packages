@@ -57,20 +57,34 @@ SHA1: 39d46f21889c345abde9a46e37cb52ccd92dc17c
 SHA256: c9a6abf7821863d84fdfa9b3aed74ddfb7fb87c824cbc2d23ec2c521baf4500b
 SHA512: ba693476955bf23c0b03dbe2d763b5fff99c3e192b6f615aa6bd74db95465d1dc742447738f7a44ab575271c2fad46cf6ee3c052c8c503801689cd0284a6de59
 
-Package: liborc
-Installed-Size: 6364
-Version: 0.4.32
-Priority: optional
+Package: liborc-static
 Architecture: aarch64
-Essential: no
-Maintainer: build by mjuned
-Description: The Oil Runtime Compiler for compiling and executing very simple programs that operate on arrays of data
-Filename: dists/termux/plus/binary-aarch64/liborc-0.4.32_aarch64.deb
-Size: 411864
-MD5Sum: 73cd784b47386aaac08914c550d4f2f8
-SHA1: 8978ee0b1487c38b9c0ac3e7ddbb375659ecbd7f
-SHA256: 695b20308775aaf5cdc9ee159cecf4a2dd7f866ea981bed599077a6f995d2bbe
-SHA512: b8343b5aeac292c2be9e1b67476a44f1ed99c0fa6adc632e5644a9ca8c517ac99eac08641c5b9a88a99a218e679ebd8922a7a2f25530c414c7d6cc635756fb3b
+Installed-Size: 140
+Maintainer: default
+Version: 0.4.32
+Homepage: 
+Depends: liborc (= 0.4.32)
+Description: Static libraries for liborc
+Filename: dists/termux/plus/binary-aarch64/liborc-static_0.4.32_aarch64.deb
+Size: 25384
+MD5Sum: 0b3cd06c6d6953ae1f1ba1a006fc1696
+SHA1: d77d2f39df8e38e044f8890fb08c10afa80b1bd1
+SHA256: c9a8aeb5dd04272b85b1151a9af9bd08863a4f8733ecb424caffb1c9a475d500
+SHA512: e3ce2d3e467822e614e2007a28a0a57d8c634da2584139dedd9b6f13615b12639777aec177c620bf82374e8d47c98b85b0e5955cbbd144640485c4adf2a06d61
+
+Package: liborc
+Architecture: aarch64
+Installed-Size: 1188
+Maintainer: default
+Version: 0.4.32
+Homepage: 
+Description: Oil-runtime-compiler
+Filename: dists/termux/plus/binary-aarch64/liborc_0.4.32_aarch64.deb
+Size: 165490
+MD5Sum: c6ab151dae8c9366a686e73b516f6ddc
+SHA1: ac4224693f7348b5f83e6b2d582988789cd63c4a
+SHA256: dd8655aaffed8d5a01063efcb3e7ea1facf38772e07c4084f9b595743f380fac
+SHA512: 63a65077ba8d289818c7e378b8553c3194b9fc224b656b6d823bce0c4e5b784f3fb056a37ff8487f97cc1f7c869d1fd3a2306e2087e2dc83edb848204b6786d9
 
 Package: libspice-server
 Version: 0.14.91

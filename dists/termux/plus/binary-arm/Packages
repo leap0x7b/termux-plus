@@ -57,19 +57,34 @@ SHA1: a8244268c5bd38480392792b57a3373028d5d97a
 SHA256: 459fd453203f68ed6e47d264eef5fee8570f458a42bb90c89eed6e80020a9a5b
 SHA512: d0d6500b11ca5ba164d153bc84b0542b17a8d4b58923b298c1d2cbc0f3840a0cce9c6190b5ffb597d5c7812c748b38c2d124c3916a0b35c5ed9caf0aedaf363a
 
-Package: liborc
-Version: 0.4.32
-Priority: optional
+Package: liborc-static
 Architecture: arm
-Essential: no
-Maintainer: build by mjuned
-Description: The Oil Runtime Compiler for compiling and executing very simple programs that operate on arrays of data
-Filename: dists/termux/plus/binary-arm/liborc-0.4.32_armv7l.deb
-Size: 443916
-MD5Sum: 1c5c9eb3d92f8686d4413969e7996407
-SHA1: d9cd932abbebdf2d2c2f925730a167edc48b2718
-SHA256: f4b9fa03803dd7dcf5049c062fc6a0daff67a7a519bf5f81e8e9243d70be6071
-SHA512: 5612974a1ce1d7013f79d7b5aa3d0ea1c27269af190c2b57a18e451d55804b41739b970cd0b27990c9d719e923c277dd27657609be430f288e87efc7cb11c9ed
+Installed-Size: 108
+Maintainer: default
+Version: 0.4.32
+Homepage: 
+Depends: liborc (= 0.4.32)
+Description: Static libraries for liborc
+Filename: dists/termux/plus/binary-arm/liborc-static_0.4.32_arm.deb
+Size: 24618
+MD5Sum: 14b42ac695d73692c20a904810f8f426
+SHA1: 124849dc33931977cfb3b2799d8255609d230f9c
+SHA256: 4cb67a60dacfed15653fff7d921deaf50b4f7f083335b1a32b3daebbe7291ff8
+SHA512: 05e3a9b2c515f341b2548acfc845ab87b7b4b65f1ad6fc62811375657682174efb9ea50e9c01bff47daec4b3413dd5f472776ed725a03134c6eee64cfcdf9a8f
+
+Package: liborc
+Architecture: arm
+Installed-Size: 1164
+Maintainer: default
+Version: 0.4.32
+Homepage: 
+Description: Oil-runtime-compiler
+Filename: dists/termux/plus/binary-arm/liborc_0.4.32_arm.deb
+Size: 168342
+MD5Sum: fbb95d41764c4f4542d9bc7995d78244
+SHA1: db6de875d32e5d2d5ff27f7f5648882da370a24a
+SHA256: c219af95833581bbe3d3eab602a918a58f0515b0519f3f6c215372e803a182e4
+SHA512: cc2ea8ebe87b36f228d73f1739b0e7099b51ed9e392b41548cc8fb502f95e27e5858ce9bc925b225a3e9300bac5bc9533279011eea7a742c49f94bc9589a335d
 
 Package: libspice-server
 Version: 0.14.91

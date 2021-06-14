@@ -57,6 +57,35 @@ SHA1: 95a032ac04b7d57b5881db978dad11f506c7ce9b
 SHA256: 1a270249ea06ac4ea1286dddb318fba1b1103cd9b44654da14deb531f1c08b03
 SHA512: 2f0fbfbc0a2bb4731176aa41957329c7e65675b004732523e075f5d99414a972708660d44c7962c4534e56a92c097f7c7ba010afa434e1b706eb9f9b04f165da
 
+Package: liborc-static
+Architecture: x86_64
+Installed-Size: 132
+Maintainer: default
+Version: 0.4.32
+Homepage: 
+Depends: liborc (= 0.4.32)
+Description: Static libraries for liborc
+Filename: dists/termux/plus/binary-x86_64/liborc-static_0.4.32_x86_64.deb
+Size: 24826
+MD5Sum: 7ec01d76c479d4fde0843338180d61a7
+SHA1: 78ad9a59bdef9057d5b71c7aecb393bfecac9fbc
+SHA256: 54ef3af0875ed3a8eb595bfa91ff04f8cc6788d20a4df6ab71e873759f8c86f7
+SHA512: b04d3f684e26d254d027e39fafcff80b2e216c1a5815be41147c801b15377aea11233cdfedbda6e590d1a833f4415307b91ea08ff59de6547e58ac782b004365
+
+Package: liborc
+Architecture: x86_64
+Installed-Size: 1340
+Maintainer: default
+Version: 0.4.32
+Homepage: 
+Description: Oil-runtime-compiler
+Filename: dists/termux/plus/binary-x86_64/liborc_0.4.32_x86_64.deb
+Size: 193960
+MD5Sum: 0daec500bd7ebe70bb08ad33a1264f48
+SHA1: 1a24d705460e117948e3e6c086339f05f8292889
+SHA256: 138be2b6421f97bfd01d6a937a09a44dc9dfd87c796d560a0c987aae3ae2fcbb
+SHA512: 1614e97fc25f1d039e31046d4dbb311413c96fc3ea574b24ed704557c7207a0d3ce8d67e7ee628863495f55d5092f0720add3ede2cf6c74d8e0f693a4600eb42
+
 Package: libwayland-protocols
 Architecture: x86_64
 Installed-Size: 604
