@@ -5,3 +5,4 @@ echo "deb [trusted=yes] $REPO_URL termux plus" > $PREFIX/etc/apt/sources.d/termu
 echo "[:] Updating APT repository..."
 apt update
 echo "[✓] Succesfully set up Termux Plus. Run 'apt list | grep plus' to list Termux Plus packages"
+
