@@ -6,7 +6,7 @@ Run this command:
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/leapofazzam123/termux-plus/master/install.sh)"
 ```
 ## Pacakges available
-* liborc (armv7l and aarch64 only)
+* liborc 
 * libspice (armv7l and aarch64 only)
 * Headless QEMU with SPICE (armv7l and aarch64 only)
 * ALSA Libs
