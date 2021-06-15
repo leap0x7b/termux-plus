@@ -1,4 +1,4 @@
-#!/data/data/com.termux/files/bin/sh
+#!/data/data/com.termux/files/usr/bin/sh
 # when testing, wget and curl doesnt use the latest version of the script, wtf
 export REPO_URL="https://leapofazzam123.github.io/termux-plus"
 echo "[:] Adding Termux Plus..."
