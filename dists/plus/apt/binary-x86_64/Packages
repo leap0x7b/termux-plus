@@ -6,7 +6,7 @@ Version: 1.1.3
 Homepage: http://www.alsa-project.org
 Depends: alsa-lib (= 1.1.3)
 Description: Static libraries for alsa-lib
-Filename: dists/termux/plus/binary-x86_64/alsa-lib-static_1.1.3_x86_64.deb
+Filename: dists/plus/apt/binary-x86_64/alsa-lib-static_1.1.3_x86_64.deb
 Size: 167438
 MD5Sum: 0c3104e80bd7071f6f8807894f588c76
 SHA1: 61c50a19cff16d6d748ba3e3932002cb61c64410
@@ -21,7 +21,7 @@ Version: 1.1.3
 Homepage: http://www.alsa-project.org
 Depends: libandroid-shmem
 Description: FIXME:Add description
-Filename: dists/termux/plus/binary-x86_64/alsa-lib_1.1.3_x86_64.deb
+Filename: dists/plus/apt/binary-x86_64/alsa-lib_1.1.3_x86_64.deb
 Size: 215558
 MD5Sum: 928b13da4d263de6ad4d26fd371d672f
 SHA1: c7d19de34650b89f86744d1c002b206b88d48bc6
@@ -35,7 +35,7 @@ Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
 Version: 0.29.1
 Homepage: https://github.com/mozilla/geckodriver
 Description: Proxy for using W3C WebDriver-compatible clients to interact with Gecko-based browsers
-Filename: dists/termux/plus/binary-x86_64/geckodriver_0.29.1_x86_64.deb
+Filename: dists/plus/apt/binary-x86_64/geckodriver_0.29.1_x86_64.deb
 Size: 1480742
 MD5Sum: 2a9f3ad21f271dfbe52973d0f8ca9968
 SHA1: ada445d509e682e35b70eaad11e3165417082e42
@@ -50,7 +50,7 @@ Version: 0.0.1
 Homepage: https://github.com/twaik/liblorie
 Depends: libandroid-shmem, libwayland, xorg-server
 Description: liblorie
-Filename: dists/termux/plus/binary-x86_64/liblorie_0.0.1_x86_64.deb
+Filename: dists/plus/apt/binary-x86_64/liblorie_0.0.1_x86_64.deb
 Size: 19994
 MD5Sum: 5d39d15cb0bb86ac68170c29244b976f
 SHA1: 95a032ac04b7d57b5881db978dad11f506c7ce9b
@@ -65,7 +65,7 @@ Version: 0.4.32
 Homepage: 
 Depends: liborc (= 0.4.32)
 Description: Static libraries for liborc
-Filename: dists/termux/plus/binary-x86_64/liborc-static_0.4.32_x86_64.deb
+Filename: dists/plus/apt/binary-x86_64/liborc-static_0.4.32_x86_64.deb
 Size: 24826
 MD5Sum: 7ec01d76c479d4fde0843338180d61a7
 SHA1: 78ad9a59bdef9057d5b71c7aecb393bfecac9fbc
@@ -79,7 +79,7 @@ Maintainer: default
 Version: 0.4.32
 Homepage: 
 Description: Oil-runtime-compiler
-Filename: dists/termux/plus/binary-x86_64/liborc_0.4.32_x86_64.deb
+Filename: dists/plus/apt/binary-x86_64/liborc_0.4.32_x86_64.deb
 Size: 193960
 MD5Sum: 0daec500bd7ebe70bb08ad33a1264f48
 SHA1: 1a24d705460e117948e3e6c086339f05f8292889
@@ -94,7 +94,7 @@ Version: 1.17-4
 Homepage: https://wayland.freedesktop.org/
 Depends: libandroid-support
 Description: Wayland protocols library
-Filename: dists/termux/plus/binary-x86_64/libwayland-protocols_1.17-4_x86_64.deb
+Filename: dists/plus/apt/binary-x86_64/libwayland-protocols_1.17-4_x86_64.deb
 Size: 57044
 MD5Sum: 72f460eae84579e7e278460e3a8101bf
 SHA1: c58fc033708b4d04a8c5e90a9c50508ac0ad3e49
@@ -109,7 +109,7 @@ Version: 1.19.0
 Homepage: https://wayland.freedesktop.org/
 Depends: libwayland (= 1.19.0)
 Description: Static libraries for libwayland
-Filename: dists/termux/plus/binary-x86_64/libwayland-static_1.19.0_x86_64.deb
+Filename: dists/plus/apt/binary-x86_64/libwayland-static_1.19.0_x86_64.deb
 Size: 104438
 MD5Sum: 2b389ce674e1dc5d0c41d954a94d07ae
 SHA1: ba130cafa094a355db0e7f9083ce75819891861e
@@ -124,7 +124,7 @@ Version: 1.19.0
 Homepage: https://wayland.freedesktop.org/
 Depends: libandroid-support, libffi, libxml2, libexpat
 Description: Wayland protocol library
-Filename: dists/termux/plus/binary-x86_64/libwayland_1.19.0_x86_64.deb
+Filename: dists/plus/apt/binary-x86_64/libwayland_1.19.0_x86_64.deb
 Size: 116992
 MD5Sum: ec33744779a6fc3a1dbf8232332032be
 SHA1: f73c448602ea0f92daf0d29734f64df3d085205e
@@ -141,7 +141,7 @@ Depends: libandroid-shmem, libexpat, libdrm, libx11, libxdamage, libxext, libxml
 Conflicts: libmesa
 Replaces: libmesa
 Description: An open-source implementation of the OpenGL specification
-Filename: dists/termux/plus/binary-x86_64/mesa_17.3.9-33_x86_64.deb
+Filename: dists/plus/apt/binary-x86_64/mesa_17.3.9-33_x86_64.deb
 Size: 306260
 MD5Sum: e251aae2d22e296d1edd52e822076fc0
 SHA1: 352a9e2c67870258393008b1695976466b5cbce4
@@ -156,7 +156,7 @@ Version: 1.0-2
 Homepage: https://github.com/termux/x11-packages
 Depends: libwayland
 Description: Utility to start X11 Termux add-on
-Filename: dists/termux/plus/binary-x86_64/termux-x11_1.0-2_x86_64.deb
+Filename: dists/plus/apt/binary-x86_64/termux-x11_1.0-2_x86_64.deb
 Size: 2908
 MD5Sum: eb9d327c4e7edaf7dadf12e0c6023af3
 SHA1: 84e06bd1b0360b9eb9310f6f7cf48d3cb1920f78
@@ -171,7 +171,7 @@ Version: 1.20.3-1
 Homepage: https://xorg.freedesktop.org/wiki/
 Depends: xorg-server (= 1.20.3-1)
 Description: Static libraries for xorg-server
-Filename: dists/termux/plus/binary-x86_64/xorg-server-static_1.20.3-1_x86_64.deb
+Filename: dists/plus/apt/binary-x86_64/xorg-server-static_1.20.3-1_x86_64.deb
 Size: 1028042
 MD5Sum: 74ed5d00a4ac5973a0919ab1d4ef7660
 SHA1: f1275bd3738f9a731de1b89fc182e386aa0383ce
@@ -186,7 +186,7 @@ Version: 1.20.3-1
 Homepage: https://xorg.freedesktop.org/wiki/
 Depends: libandroid-shmem, libdrm, libpciaccess, libpixman, libx11, libxau, libxfont2, libxinerama, libxkbfile, libxshmfence, mesa, openssl, xkeyboard-config, xorg-xkbcomp
 Description: Xorg server
-Filename: dists/termux/plus/binary-x86_64/xorg-server_1.20.3-1_x86_64.deb
+Filename: dists/plus/apt/binary-x86_64/xorg-server_1.20.3-1_x86_64.deb
 Size: 1055494
 MD5Sum: df06c86686b533201a1ab3dfe6b86619
 SHA1: 033607da075410fbee94fe7b130bcf66cf01fa07
@@ -201,7 +201,7 @@ Version: 1.20.5-6
 Homepage: https://xorg.freedesktop.org/wiki/
 Depends: libandroid-shmem, libdrm, libpciaccess, libpixman, libx11, libxau, libxfont2, libxinerama, libxkbfile, libxshmfence, mesa, openssl, xkeyboard-config, xorg-xkbcomp, libwayland, libwayland-protocols, libepoxy
 Description: Wayland X11 server
-Filename: dists/termux/plus/binary-x86_64/xwayland_1.20.5-6_x86_64.deb
+Filename: dists/plus/apt/binary-x86_64/xwayland_1.20.5-6_x86_64.deb
 Size: 665168
 MD5Sum: a6aa7bd719b6ca8e82c1910ca5f74205
 SHA1: 63aab7130e063168ef3e967bfb28fcd11ba2f6d3

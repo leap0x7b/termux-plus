@@ -5,7 +5,7 @@ Maintainer: default
 Version: 1.10.10
 Homepage: http://ant.apache.org/
 Description: Java based build tool like make
-Filename: dists/termux/plus/binary-all/ant_1.10.10_all.deb
+Filename: dists/plus/apt/binary-all/ant_1.10.10_all.deb
 Size: 917942
 MD5Sum: 0afea7c157676b3780940ac6208ed035
 SHA1: 169a0ce334267b72bc62c6399522490b8f6deb31
