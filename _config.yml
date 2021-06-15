@@ -1,4 +1,4 @@
 title: "Termux Plus"
 description: >
  Extra packages for Termux
-theme: jekyll-theme-cayman
+remote_theme: daviddarnes/alembic@main
