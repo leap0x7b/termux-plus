@@ -42,6 +42,21 @@ SHA1: 1ff3228c5a42f2e50f215f68b11d3e6263adbb5e
 SHA256: 0d26045a65efee5e70e430f368bbc0eb6f851b27c69d11bfc2dff180d361fc49
 SHA512: d4670d0a047777396847cdcfaa9963eb2b8a972d17fb0223a68a10c4e467b02e9ca4095b77a21a20cfc29a748f598f09528ea06309ecd4bf4f6a6d751aa3afa0
 
+Package: gl4es
+Architecture: arm
+Installed-Size: 1024
+Maintainer: default
+Version: 1.1.4
+Homepage: 
+Depends: libandroid-shmem, libexpat, libdrm, libx11, libxdamage, libxext, libxml2, libxshmfence, zlib
+Description: OpenGL driver for GLES devices
+Filename: dists/plus/apt/binary-arm/gl4es_1.1.4_arm.deb
+Size: 356908
+MD5Sum: 60c1758b1b6a675aa5f2845bfaae4078
+SHA1: 059d346878d9ae8583fa60d54f3bbd5212f02df8
+SHA256: 9d77b4f3e0d359092f05ed0a2f92ce2f70e00440e3277b1fe6d435ada1970576
+SHA512: 1f3795c4accda73fde629eb379d82c6fed26b406d8f478874c769d95e9e38a11e32f60c089abe5f522061c6a0d29b1a5c78c80dfb9f68c69a71b8af1842549ad
+
 Package: liblorie
 Architecture: arm
 Installed-Size: 128
@@ -85,21 +100,6 @@ MD5Sum: fbb95d41764c4f4542d9bc7995d78244
 SHA1: db6de875d32e5d2d5ff27f7f5648882da370a24a
 SHA256: c219af95833581bbe3d3eab602a918a58f0515b0519f3f6c215372e803a182e4
 SHA512: cc2ea8ebe87b36f228d73f1739b0e7099b51ed9e392b41548cc8fb502f95e27e5858ce9bc925b225a3e9300bac5bc9533279011eea7a742c49f94bc9589a335d
-
-Package: libspice-server
-Version: 0.14.91
-Priority: optional
-Architecture: arm
-Depends: libopus, liborc, gstreamer, gst-plugins-base, libsasl, libjpeg-turbo, openssl, glib, zlib, liblz4, libpixman, libiconv
-Essential: no
-Maintainer: build by mjuned
-Description: SPICE server is the library used by the hypervisor in order to share the VM under SPICE protocol
-Filename: dists/plus/apt/binary-arm/libspice-server-0.14.91_armv7l.deb
-Size: 1334244
-MD5Sum: af3a41cf8c62965581856f95f5c7f618
-SHA1: 7f583c0c61e0a95b2f3574595932366ee6413b26
-SHA256: c78b9fdae4c0e6877ba0cb294527fbd70800e88b44ec1021974f1604217b0e85
-SHA512: c24d4490a99d72816af814cbb7ffbdc6e8f361d0788ee3264b63f6df37d42db5552088259bcd24218f35605a9199af025d09c319f856b51f04d55c1d9916cdc3
 
 Package: libwayland-protocols
 Architecture: arm
@@ -163,23 +163,257 @@ SHA1: 58538aa6ed21a2057c409de7bb50b81983700e46
 SHA256: 2a25e7a01f06df09c3a614edf863722b7e92c7dad4e67fb58adc488e1d4d7306
 SHA512: 0e83d753508e4adec5e6f0b29094249124482a6530888fcb316f4ccbf5da72adf93713958dfaa550a0fba8c13ae14c4834d426fab2d88c61c28792df6726e7e4
 
-Package: qemu-system-x86-64
-Version: 4.2.0
-Priority: optional
+Package: ngrok
+Version: 2.3.40
 Architecture: arm
-Depends: attr, glib, libbz2, libc++, libcap-ng, libcurl, libgcrypt, libiconv, libjpeg-turbo, liblzo, libnfs, libpixman, libpng, libssh, ncurses, resolv-conf, zlib, liborc, libspice-server, qemu-common
-Essential: no
-Maintainer: build by mjuned
-Description: Qemu emulation includes x86_64 and i386 system with spice support
-Conflicts: qemu-system-i386-headless, qemu-system-x86-64-headless, qemu-system-x86-64, qemu-system-i386
-Replaces: qemu-system-x86-64
-Provides: qemu-system-x86-64
-Filename: dists/plus/apt/binary-arm/qemu-system-x86-64-4.2.1_armv7l.deb
-Size: 5160384
-MD5Sum: 17e9c5544ecf5225ce8ba5730197d195
-SHA1: 6286ae72a99924462a1e3f4a09b3d66a0aec61c6
-SHA256: b3d95acd8b850d0f8696dfc3d861e55260e9e6f14583d0f7a96301febb9d3ed6
-SHA512: 0c22c241aa1fa74df9a97a391f8775546989b33ade6e047944f3d521e63adf83dc33d370eb3bdcd3d9d375909e6ae4f469d38606c2ad027f22f0f4bab9fddb06
+Maintainer: @leapofazzam123
+Description: secure introspectable tunnels to localhost
+Homepage: https://ngrok.com
+Filename: dists/plus/apt/binary-arm/ngrok_2.3.40_arm.deb
+Size: 10668288
+MD5Sum: bc7fa65604fc123903eb41a4db42595c
+SHA1: e065b02a4fb7301adcd4a9c274644b2087ab88f9
+SHA256: b7498272eb185c4569217622c2d085de72de834a98348dfe4d741998edc0b66f
+SHA512: 28f026774d636e52f0564323100f09629343b84d3d38f1de430a415b2eec3051fb7a738dab93c68cffa0b8159d31a4d6de55fd709b009ff5a207af89ca4c880a
+
+Package: qemu-system-aarch64
+Architecture: arm
+Installed-Size: 11012
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 1:5.2.0-6
+Homepage: https://www.qemu.org
+Depends: attr, glib, libbz2, libc++, libcap-ng, libcurl, libgcrypt, libiconv, libjpeg-turbo, liblzo, libnfs, libpixman, libpng, libssh, libx11, ncurses, qemu-common, resolv-conf, sdl2, sdl2-image, zlib
+Conflicts: qemy-system-aarch64-headless
+Description: A generic and open source machine emulator and virtualizer
+Filename: dists/plus/apt/binary-arm/qemu-system-aarch64_1:5.2.0-6_arm.deb
+Size: 2677650
+MD5Sum: f81da3c4da645cf4341aa4c3080e2ddc
+SHA1: 34cbef1bc945e3fec14631e7cf7aa3330729d3c7
+SHA256: dcfffd7393c91eed154722813751c84a2176eb76adce56f7c2842902bba1b43e
+SHA512: 4a402866c7088cd947043d6d1654139db136e45c8d3019bc870f0148fc5508225ed2c4cf277ed946ecb8bbb920244eb4894120380b5c9de797251c5c6f734933
+
+Package: qemu-system-arm
+Architecture: arm
+Installed-Size: 10204
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 1:5.2.0-6
+Homepage: https://www.qemu.org
+Depends: attr, glib, libbz2, libc++, libcap-ng, libcurl, libgcrypt, libiconv, libjpeg-turbo, liblzo, libnfs, libpixman, libpng, libssh, libx11, ncurses, qemu-common, resolv-conf, sdl2, sdl2-image, zlib
+Conflicts: qemy-system-arm-headless
+Description: A generic and open source machine emulator and virtualizer
+Filename: dists/plus/apt/binary-arm/qemu-system-arm_1:5.2.0-6_arm.deb
+Size: 2484210
+MD5Sum: b3f775318dfe162b9e2f13309041f2a1
+SHA1: 544c9792574a5e0d3136c6fe21318aee69660799
+SHA256: a4df179c31c5b9132c6f6a54060a6c1d01c207b9c14bcceedb8980cb48b908a7
+SHA512: 4fa847b9c4773847c2fc09e8efdf32df99a1b07ab22a6569ceeb8b9ee4bbd26da3ef90cc27ee9a643635b7c570aef2382855e9d1522830e908ce10ffafa45fe8
+
+Package: qemu-system-i386
+Architecture: arm
+Installed-Size: 9328
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 1:5.2.0-6
+Homepage: https://www.qemu.org
+Depends: attr, glib, libbz2, libc++, libcap-ng, libcurl, libgcrypt, libiconv, libjpeg-turbo, liblzo, libnfs, libpixman, libpng, libssh, libx11, ncurses, qemu-common, resolv-conf, sdl2, sdl2-image, zlib
+Conflicts: qemy-system-i386-headless
+Description: A generic and open source machine emulator and virtualizer
+Filename: dists/plus/apt/binary-arm/qemu-system-i386_1:5.2.0-6_arm.deb
+Size: 2145138
+MD5Sum: dbfea45532d6023f3e2d5684ed4030e9
+SHA1: 284a527ea08de43eeff56277af25047a0e44ce1e
+SHA256: d366f5a4f0cb12c242b561c340234924c54cfaf7b76329cdb9ad138a02168f64
+SHA512: 6d08fa0315b08646c4a31de12a22f6ea9ad9955e09b03b7c5458dcd490602c8c8dcc20872e450e37e3dbbb675c74e8c96daaf803e882f5526de892efd6b94f99
+
+Package: qemu-system-m68k
+Architecture: arm
+Installed-Size: 6596
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 1:5.2.0-6
+Homepage: https://www.qemu.org
+Depends: attr, glib, libbz2, libc++, libcap-ng, libcurl, libgcrypt, libiconv, libjpeg-turbo, liblzo, libnfs, libpixman, libpng, libssh, libx11, ncurses, qemu-common, resolv-conf, sdl2, sdl2-image, zlib
+Conflicts: qemu-system-m68k-headless
+Description: A generic and open source machine emulator and virtualizer
+Filename: dists/plus/apt/binary-arm/qemu-system-m68k_1:5.2.0-6_arm.deb
+Size: 1483130
+MD5Sum: b60c0b3240eb3f99e01df30ef008a01d
+SHA1: 2bc2092a749bcc152e22688afc6e8533e811e4d6
+SHA256: 8419282145df48d01912a80c72139b6f2eab232367e9cd266f4ea86d38e1dc70
+SHA512: 7bfd3d778e20fe04a68518fc143fd7c24623d4365c48c8ed305cd26eadbdc7249d4ee56a5d00bd6a27534b778117d883a648d4de4e9e50fcddfe1bba9a525a77
+
+Package: qemu-system-mips64
+Architecture: arm
+Installed-Size: 8636
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 1:5.2.0-6
+Homepage: https://www.qemu.org
+Depends: attr, glib, libbz2, libc++, libcap-ng, libcurl, libgcrypt, libiconv, libjpeg-turbo, liblzo, libnfs, libpixman, libpng, libssh, libx11, ncurses, qemu-common, resolv-conf, sdl2, sdl2-image, zlib
+Conflicts: qemu-system-mips64-headless
+Description: A generic and open source machine emulator and virtualizer
+Filename: dists/plus/apt/binary-arm/qemu-system-mips64_1:5.2.0-6_arm.deb
+Size: 2041166
+MD5Sum: 3b373f370290a77023e52da67f6d8121
+SHA1: de1d83cb63bb98c279493dded46f5334d340b776
+SHA256: b41a87f604892dc4264a4cece229a8ab13176a7acc02e8b1fa1bdb50f9d02233
+SHA512: 5f52e3fb65e6bb1fd82616694bbddb8363c2c6e5ee6185a43abafd2e91ee37c0b0a709c96d66e29f65f18b37f95abd368c59c5ef3088a82b74b0c6b692de2ef3
+
+Package: qemu-system-mips
+Architecture: arm
+Installed-Size: 8556
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 1:5.2.0-6
+Homepage: https://www.qemu.org
+Depends: attr, glib, libbz2, libc++, libcap-ng, libcurl, libgcrypt, libiconv, libjpeg-turbo, liblzo, libnfs, libpixman, libpng, libssh, libx11, ncurses, qemu-common, resolv-conf, sdl2, sdl2-image, zlib
+Conflicts: qemu-system-mips-headless
+Description: A generic and open source machine emulator and virtualizer
+Filename: dists/plus/apt/binary-arm/qemu-system-mips_1:5.2.0-6_arm.deb
+Size: 2012272
+MD5Sum: c85cdf632c19c11ae9db4bbbdd6d8173
+SHA1: 3f59c61169764c609d2378cb5ef6778fe4bf6aab
+SHA256: a266e819f1a698186f206518db27202c85f1e3b4013ad4f7e189e1c99ef3c690
+SHA512: cd6775cf9e70a6c6ae01940e0554674f80fcf433417a9941698fad6d0513ab792ae047a4a4fc686f4dc283fa74c71043fcb509b3879486029c50afcd94266c8a
+
+Package: qemu-system-ppc64
+Architecture: arm
+Installed-Size: 9880
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 1:5.2.0-6
+Homepage: https://www.qemu.org
+Depends: attr, glib, libbz2, libc++, libcap-ng, libcurl, libgcrypt, libiconv, libjpeg-turbo, liblzo, libnfs, libpixman, libpng, libssh, libx11, ncurses, qemu-common, resolv-conf, sdl2, sdl2-image, zlib
+Conflicts: qemu-system-ppc64-headless
+Description: A generic and open source machine emulator and virtualizer
+Filename: dists/plus/apt/binary-arm/qemu-system-ppc64_1:5.2.0-6_arm.deb
+Size: 2309036
+MD5Sum: c09e72ea408d9c6bab5ecdaf18b87335
+SHA1: 12222bdf00a59dab5a94bec0e3bc1bac9f81386c
+SHA256: 97ec75cf16da83397987c1c31c920903639a55d50dc5db36a2cf6ebe5daf4d08
+SHA512: 1c7ab34cb957a2b79b6139b979833576286ea592683da3b02115a5917e296a0203e6211861106d54dd3052381d9de35660497b884eee0b1b9612a207c646aa0d
+
+Package: qemu-system-ppc
+Architecture: arm
+Installed-Size: 9456
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 1:5.2.0-6
+Homepage: https://www.qemu.org
+Depends: attr, glib, libbz2, libc++, libcap-ng, libcurl, libgcrypt, libiconv, libjpeg-turbo, liblzo, libnfs, libpixman, libpng, libssh, libx11, ncurses, qemu-common, resolv-conf, sdl2, sdl2-image, zlib
+Conflicts: qemu-system-ppc-headless
+Description: A generic and open source machine emulator and virtualizer
+Filename: dists/plus/apt/binary-arm/qemu-system-ppc_1:5.2.0-6_arm.deb
+Size: 2129390
+MD5Sum: 3665ffca7747e45e64de167963ae543e
+SHA1: 2e5e34abb43a84decdea1b85b13fbe36d943dc7c
+SHA256: da5753684a3764f9cda8f05bb54305d0b55f4c8451b14caf8e8e89d891f0af39
+SHA512: 1fc0a07f0074cd486ba2a523b9ea1ecc60bef5a26f89fa60f56b126e5991b019deeafec09eea6d71ce9ee4b566bf41459963883f31f8f05f59cee7811111c901
+
+Package: qemu-system-riscv32
+Architecture: arm
+Installed-Size: 8992
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 1:5.2.0-6
+Homepage: https://www.qemu.org
+Depends: attr, glib, libbz2, libc++, libcap-ng, libcurl, libgcrypt, libiconv, libjpeg-turbo, liblzo, libnfs, libpixman, libpng, libssh, libx11, ncurses, qemu-common, resolv-conf, sdl2, sdl2-image, zlib
+Conflicts: qemy-system-riscv32-headless
+Description: A generic and open source machine emulator and virtualizer
+Filename: dists/plus/apt/binary-arm/qemu-system-riscv32_1:5.2.0-6_arm.deb
+Size: 1936916
+MD5Sum: 1e86738ba13c5e14a46ce18de0bb95d6
+SHA1: 9636e91a9ceca7af1b14001649f063d1026dcaf6
+SHA256: 85dfa6110f6ca955677c3fc940b8b4ed07d8a075df9ceb8dc80690463464ca09
+SHA512: 2cb441f5e3881a11fa6fc0f8be28e7bf3aa3aefd6aa287af7236c9264cd91b08704e67fefd96eb345a72e4cb1c82d8ace74ea662212bd09d4fd19a75444d5ed3
+
+Package: qemu-system-riscv64
+Architecture: arm
+Installed-Size: 9016
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 1:5.2.0-6
+Homepage: https://www.qemu.org
+Depends: attr, glib, libbz2, libc++, libcap-ng, libcurl, libgcrypt, libiconv, libjpeg-turbo, liblzo, libnfs, libpixman, libpng, libssh, libx11, ncurses, qemu-common, resolv-conf, sdl2, sdl2-image, zlib
+Conflicts: qemy-system-riscv64-headless
+Description: A generic and open source machine emulator and virtualizer
+Filename: dists/plus/apt/binary-arm/qemu-system-riscv64_1:5.2.0-6_arm.deb
+Size: 1946554
+MD5Sum: 18dfc7e4219cbddac0c78fbd1d1d0bdd
+SHA1: eb93b2f34dfcff8311666670eb91733b150a29b3
+SHA256: 028133d060b753bd5426f10a757418dbda53743618451bf292f601ed5f30b9b2
+SHA512: ea5c500d692f74bc77704088e55f82368f012ea7ac94948d152d41e0fd5346d3f370dcc3a4ef3ee990123f04ef23a14893e1ecda5181cdf570c566136c570ab1
+
+Package: qemu-system-sparc64
+Architecture: arm
+Installed-Size: 8152
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 1:5.2.0-6
+Homepage: https://www.qemu.org
+Depends: attr, glib, libbz2, libc++, libcap-ng, libcurl, libgcrypt, libiconv, libjpeg-turbo, liblzo, libnfs, libpixman, libpng, libssh, libx11, ncurses, qemu-common, resolv-conf, sdl2, sdl2-image, zlib
+Conflicts: qemu-system-sparc64-headless
+Description: A generic and open source machine emulator and virtualizer
+Filename: dists/plus/apt/binary-arm/qemu-system-sparc64_1:5.2.0-6_arm.deb
+Size: 1876994
+MD5Sum: 199b11714eef79e8bf98685e635f97d9
+SHA1: f699e95e8521501c07d3a20c6ce453ca7e521d36
+SHA256: 675faf2dae5ddba262edf33c63ef6d7a2dbc8782f09f99b81949e58ca4ac1a11
+SHA512: 6399c81710dd9ec4972ea11a999bc63174cfeb5ad01b94849b999ffb1886866a946f1a9b4b2d635357f656e945bd5a1e7b931923ec618248365e2c406dd28d3c
+
+Package: qemu-system-sparc
+Architecture: arm
+Installed-Size: 6608
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 1:5.2.0-6
+Homepage: https://www.qemu.org
+Depends: attr, glib, libbz2, libc++, libcap-ng, libcurl, libgcrypt, libiconv, libjpeg-turbo, liblzo, libnfs, libpixman, libpng, libssh, libx11, ncurses, qemu-common, resolv-conf, sdl2, sdl2-image, zlib
+Conflicts: qemu-system-sparc-headless
+Description: A generic and open source machine emulator and virtualizer
+Filename: dists/plus/apt/binary-arm/qemu-system-sparc_1:5.2.0-6_arm.deb
+Size: 1476194
+MD5Sum: 13403502848785f88c24e9f107d9a088
+SHA1: 4236f31476ac3c8e63d2d5e07af6cbcab603ef9f
+SHA256: a66a21a88b990292ba2c2ea5df5031ee7c3d978addb59aaab8d9f2111b2cbe45
+SHA512: ad67cf019c56792dcca4c5bd179598de31e8773949678011a20486bb00a77692a7d542d2069a21e4abb906ecf8bd87c2619c7a36158caefe7b617e2c1b34d769
+
+Package: qemu-system-x86-64
+Architecture: arm
+Installed-Size: 9364
+Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
+Version: 1:5.2.0-6
+Homepage: https://www.qemu.org
+Depends: attr, glib, libbz2, libc++, libcap-ng, libcurl, libgcrypt, libiconv, libjpeg-turbo, liblzo, libnfs, libpixman, libpng, libssh, libx11, ncurses, qemu-common, resolv-conf, sdl2, sdl2-image, zlib, gtk3, libvte, spice-server
+Conflicts: qemu-system-x86_64, qemu-system-x86_64-headless, qemu-system-x86-64-headless
+Replaces: qemu-system-x86_64, qemu-system-x86_64-headless, qemu-system-x86-64-headless
+Provides: qemu-system-x86_64
+Description: A generic and open source machine emulator and virtualizer
+Filename: dists/plus/apt/binary-arm/qemu-system-x86-64_1:5.2.0-6_arm.deb
+Size: 2164018
+MD5Sum: 6bf5d0ad8556489f0adc3214f4267121
+SHA1: 1d1fa2870fdf11ec0ef56ebac2f1cdf4aaaaab4e
+SHA256: bcc11cf798f244d5c8fcc27bdedd706da26939b03fc0f4b41c6ece52651c5787
+SHA512: 92bbed38942e70faf2659307bcfe3c45de28b1d49f65b6f5400226bfd6c7ba74cc0cba8ef5afd3c51c60f1ff5b1500c91b1e681730033132bcc57f654cfd88b6
+
+Package: spice-protocol
+Architecture: arm
+Installed-Size: 180
+Maintainer: default
+Version: 0.14.3
+Homepage: 
+Description: Gradle
+Filename: dists/plus/apt/binary-arm/spice-protocol_0.14.3_arm.deb
+Size: 18356
+MD5Sum: 15e88c645bb7153ebedfbdfc9ce69ec3
+SHA1: c738d42dddbe5bd9387e7e5d97ee60b5f81b0f00
+SHA256: 05067c3a8b0ce2e7fdf276e893c6d14fb4e30781cf2b29665edb68e3bb5d3735
+SHA512: 5cb8e78ab59765ccb4a9b4eca721f9735d1966d94fe9ee1d03452c6f2c903078322228e45570fbd57e92684b468d17405ae48f8c73bed4b66dd036c7d7445a12
+
+Package: spice-server
+Architecture: arm
+Installed-Size: 728
+Maintainer: default
+Version: 0.14.91
+Homepage: 
+Depends: libjpeg-turbo, zlib, openssl, glib, libpixman, gstreamer, gst-plugins-base, liborc, liblz4, libsasl, spice-protocol
+Description: Spice protocol for termux
+Filename: dists/plus/apt/binary-arm/spice-server_0.14.91_arm.deb
+Size: 232150
+MD5Sum: 217a656f4addddc884e4e52a0cc575e9
+SHA1: 32c2d089d312881aab58f6cd8d128cc0eeb884dd
+SHA256: 948861adb1e8aedbbc22e6c7784cc207b99db15067f42c5ea05e64d13f097e5b
+SHA512: 6caccfd30379163fb57aa3df52d924fa147e2dcbbf71b2d7b86cc2fc8f31fa0bac256a970e5a1dd112c968140540a2e5c638a24b9a33f78bf20c8c38b51cdd13
 
 Package: termux-x11
 Architecture: arm
