@@ -6,6 +6,7 @@ on:
     - master
     paths:
     - 'packages/**'
+    - '.github/workflows/**'
   pull_request:
     paths:
     - 'packages/**'
