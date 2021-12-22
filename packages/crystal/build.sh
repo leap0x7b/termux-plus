@@ -11,8 +11,6 @@ TERMUX_PKG_BUILD_IN_SRC=true
 TERMUX_PKG_HOSTBUILD=true
 
 termux_setup_crystal() {
-	local CRYSTAL_FOLDER
-
 	if [ "${TERMUX_PACKAGES_OFFLINE-false}" = "true" ]; then
 		CRYSTAL_FOLDER=${TERMUX_SCRIPTDIR}/build-tools/crystal-${TERMUX_PKG_VERSION}
 	else
@@ -22,7 +20,7 @@ termux_setup_crystal() {
 	if [ "$TERMUX_ON_DEVICE_BUILD" = "false" ]; then
 		if [ ! -x "$CRYSTAL_FOLDER/crystal" ]; then
 			mkdir -p $CRYSTAL_FOLDER
-			local CRYSTAL_TARBALL=${TERMUX_PKG_TMPDIR}/crystal-${TERMUX_PKG_VERSION}.tar.gz
+			CRYSTAL_TARBALL=${TERMUX_PKG_TMPDIR}/crystal-${TERMUX_PKG_VERSION}.tar.gz
 			termux_download https://github.com/crystal-lang/crystal/releases/download/${TERMUX_PKG_VERSION}/crystal-${TERMUX_PKG_VERSION}-1-linux-x86_64-bundled.tar.gz \
 				"$CRYSTAL_TARBALL" \
 				254f266d547434a00a470347147d0069a905c40b7761b9541d78796d76068450
