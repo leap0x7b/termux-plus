@@ -86,12 +86,23 @@ fi
 		fi
 	fi
 
-	echo "[*] Copying packages from './packages' to build environment..."
+	echo "[*] Copying packages from './termux-packages' to build environment..."
 	for pkg in $(find "$REPOROOT"/packages -mindepth 1 -maxdepth 1 -type d); do
 		PKG_DIR="${BUILDER_HOME}/${BUILD_ENVIRONMENT}/packages/$(basename "$pkg")"
 		if docker exec "$CONTAINER_NAME" [ ! -d "${PKG_DIR}" ]; then
 			# docker cp -a does not work, discussed here: https://github.com/moby/moby/issues/34142
 			docker cp "$pkg" "$CONTAINER_NAME:${BUILDER_HOME}/${BUILD_ENVIRONMENT}"/packages/
+		else
+			echo "[!] Package '$(basename "$pkg")' already exists in build environment. Skipping."
+		fi
+	done
+
+	echo "[*] Copying packages from './x11-packages' to build environment..."
+	for pkg in $(find "$REPOROOT"/packages -mindepth 1 -maxdepth 1 -type d); do
+		PKG_DIR="${BUILDER_HOME}/x11-packages/packages/$(basename "$pkg")"
+		if docker exec "$CONTAINER_NAME" [ ! -d "${PKG_DIR}" ]; then
+			# docker cp -a does not work, discussed here: https://github.com/moby/moby/issues/34142
+			docker cp "$pkg" "$CONTAINER_NAME:${BUILDER_HOME}/x11-packages"/packages/
 		else
 			echo "[!] Package '$(basename "$pkg")' already exists in build environment. Skipping."
 		fi
