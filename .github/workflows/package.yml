@@ -51,10 +51,12 @@ jobs:
         fi
         # Process tag '%ci:no-build' that may be added as line to commit message.
         # Forces CI to cancel current build with status 'passed'.
-        if grep -qiP '^\s*%ci:no-build\s*$' <(git log --format="%B" -n 1 "HEAD"); then
-          tar cf artifacts/output-${{ matrix.target_arch }}.tar output
-          echo "[!] Force exiting as tag '%ci:no-build' was applied to HEAD commit message."
-          exit 0
+        if [ -f ./built_packages.txt ]; then
+          if grep -qiP '^\s*%ci:no-build\s*$' <(git log --format="%B" -n 1 "HEAD"); then
+            tar cf artifacts/output-${{ matrix.target_arch }}.tar output
+            echo "[!] Force exiting as tag '%ci:no-build' was applied to HEAD commit message."
+            exit 0
+          fi
         fi
         # Parse changed files and identify new packages and deleted packages.
         # Create lists of those packages that will be passed to upload job for
