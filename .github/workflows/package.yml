@@ -45,7 +45,7 @@ jobs:
           CHANGED_FILES=$(git diff-tree --no-commit-id --name-only -r "${BASE_COMMIT}" "HEAD")
         fi
         mkdir -p ./artifacts ./output
-        touch ./output/.placeholder
+        touch ./output/.gitkeep
         # Process tag '%ci:no-build' that may be added as line to commit message.
         # Forces CI to cancel current build with status 'passed'.
         if grep -qiP '^\s*%ci:no-build\s*$' <(git log --format="%B" -n 1 "HEAD"); then
@@ -98,16 +98,16 @@ jobs:
           mv ./deleted_packages.txt.tmp ./deleted_packages.txt
         fi
 
-        if grep -qP '^rust$' ./built_packages.txt ; then
+        #if grep -qP '^rust$' ./built_packages.txt ; then
           echo "Free additional disk space on host"
           sudo apt purge -yq $(dpkg -l | grep '^ii' | awk '{ print $2 }' | grep -P '(cabal-|dotnet-|ghc-|libmono|php)') \
             liblldb-6.0 libllvm6.0:amd64 mono-runtime-common monodoc-manual powershell ruby
           sudo apt autoremove -yq
           sudo rm -rf /opt/hostedtoolcache /usr/local /usr/share/dotnet /usr/share/swift
-        fi
+        #fi
 
         if [ -f ./built_packages.txt ]; then
-          #./scripts/lint-packages.sh $(cat ./built_packages.txt | awk '{print "packages/"$1"/build.sh"}')
+          ./scripts/lint-packages.sh $(cat ./built_packages.txt | awk '{print "packages/"$1"/build.sh"}')
           ./start-builder.sh ./build-package.sh -o ./output -I -a ${{ matrix.target_arch }} $(cat ./built_packages.txt)
         fi
 
