@@ -1,0 +1,4 @@
+/debs/*
+/deb-packages/*
+*.deb
+!/debs/.gitkeep
