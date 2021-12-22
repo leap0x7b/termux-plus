@@ -46,6 +46,7 @@ jobs:
         fi
         mkdir -p ./artifacts ./output
         touch ./output/.gitkeep
+        touch built_packages.txt
         # Process tag '%ci:no-build' that may be added as line to commit message.
         # Forces CI to cancel current build with status 'passed'.
         if grep -qiP '^\s*%ci:no-build\s*$' <(git log --format="%B" -n 1 "HEAD"); then
