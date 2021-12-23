@@ -109,6 +109,14 @@ jobs:
         fi
 
         if [ -f ./built_packages.txt ]; then
+          rm -rf .gitmodules
+          rm -rf termux-packages
+          rm -rf x11-packages
+          git clone https://github.com/termux/termux-packages
+          git clone https://github.com/termux/x11-packages
+          rm -rf ./termux-packages/.git
+          rm -rf ./x11-packages/.git
+
           ./termux-packages/scripts/lint-packages.sh $(cat ./built_packages.txt | awk '{print "packages/"$1"/build.sh"}')
           ./start-builder.sh ./build-package.sh -o ./output -I -a ${{ matrix.target_arch }} $(cat ./built_packages.txt)
         fi
@@ -128,7 +136,7 @@ jobs:
     - name: Store *.deb files
       uses: actions/upload-artifact@v2
       with:
-        name: termux-extra-packages-${{ matrix.target_arch }}-${{ github.sha }}
+        name: termux-plus-${{ matrix.target_arch }}-${{ github.sha }}
         path: ./termux-packages/output
 
   upload:

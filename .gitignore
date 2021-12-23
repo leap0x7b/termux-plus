@@ -1,4 +1,4 @@
 /debs/*
 /deb-packages/*
 *.deb
-!/debs/.gitkeep
+!/debs/.placeholder
