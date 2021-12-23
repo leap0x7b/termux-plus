@@ -6,9 +6,9 @@ cd $(dirname "$(realpath "$0")")
 
 # check if we have 'termux-packages' repo
 if [ ! -e ./termux-packages/build-package.sh ]; then
-    echo "The termux-packages repository is not populatated. either initialize submodules or run ./update.sh"
+    echo "The termux-packages repository is not populatated. Please initialize submodules first."
     exit 2
 fi
 
 # exec the build-package.sh
-./termux-packages/build-package.sh "$@"
+./termux-packages/build-package.sh ../packages/"$@"
