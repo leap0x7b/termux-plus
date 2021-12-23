@@ -99,7 +99,7 @@ fi
 		PKG_DIR="${BUILDER_HOME}/${X11_PACKAGES}/packages/$(basename "$pkg")"
 		if docker exec "$CONTAINER_NAME" [ ! -d "${PKG_DIR}" ]; then
 			# docker cp -a does not work, discussed here: https://github.com/moby/moby/issues/34142
-			docker cp "$pkg" "$CONTAINER_NAME:${BUILDER_HOME}/${X11_PACKAGES}"/packages/
+			docker cp "$pkg" "$CONTAINER_NAME:${BUILDER_HOME}/${TERMUX_PACKAGES}"/packages/
 		else
 			echo "[!] Package '$(basename "$pkg")' already exists in build environment. Skipping."
 		fi
