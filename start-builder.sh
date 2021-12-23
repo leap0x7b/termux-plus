@@ -27,7 +27,6 @@ IMAGE_NAME="termux/package-builder"
 LOCK_FILE="/tmp/.termux-root-builder.lck"
 CONTAINER_NAME="termux-package-builder"
 BUILD_ENVIRONMENT="termux-packages"
-X11_PACKAGES="termux-packages"
 
 BUILDER_HOME="/home/builder"
 

@@ -113,6 +113,8 @@ jobs:
           rm -rf x11-packages
           git clone https://github.com/termux/termux-packages
           git clone https://github.com/termux/x11-packages
+          rm -rf termux-packages/.git
+          rm -rf x11-packages/.git
           ./termux-packages/scripts/lint-packages.sh $(cat ./built_packages.txt | awk '{print "packages/"$1"/build.sh"}')
           rm -rf termux-packages
           rm -rf x11-packages
