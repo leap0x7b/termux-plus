@@ -26,7 +26,7 @@ IMAGE_NAME="termux/package-builder"
 
 LOCK_FILE="/tmp/.termux-root-builder.lck"
 CONTAINER_NAME="termux-package-builder"
-TERMUX_PACKAGES="termux-packages"
+BUILD_ENVIRONMENT="termux-packages"
 X11_PACKAGES="termux-packages"
 
 BUILDER_HOME="/home/builder"
@@ -69,8 +69,7 @@ fi
 			--tty \
 			--detach \
 			--name "$CONTAINER_NAME" \
-			--volume "${REPOROOT}/${TERMUX_PACKAGES}:${BUILDER_HOME}/termux-packages" \
-			--volume "${REPOROOT}/${X11_PACKAGES}:${BUILDER_HOME}/x11-packages" \
+			--volume "${REPOROOT}/${BUILD_ENVIRONMENT}:${BUILDER_HOME}/termux-packages" \
 			--workdir "${BUILDER_HOME}/termux-packages" \
 			"$IMAGE_NAME"
 
@@ -83,23 +82,14 @@ fi
 		fi
 	fi
 
-	echo "[*] Copying packages from './termux-packages' to build environment..."
-	for pkg in $(find "$REPOROOT"/packages -mindepth 1 -maxdepth 1 -type d); do
-		PKG_DIR="${BUILDER_HOME}/${TERMUX_PACKAGES}/packages/$(basename "$pkg")"
+	PACKAGES=$(find "$REPOROOT"/packages -mindepth 1 -maxdepth 1 -type d)
+	PACKAGES+=$(find "$REPOROOT"/x11-packages/packages -mindepth 1 -maxdepth 1 -type d)
+	echo "[*] Copying packages from './packages' to build environment..."
+	for pkg in ${PACKAGES}; do
+		PKG_DIR="${BUILDER_HOME}/${BUILD_ENVIRONMENT}/packages/$(basename "$pkg")"
 		if docker exec "$CONTAINER_NAME" [ ! -d "${PKG_DIR}" ]; then
 			# docker cp -a does not work, discussed here: https://github.com/moby/moby/issues/34142
-			docker cp "$pkg" "$CONTAINER_NAME:${BUILDER_HOME}/${TERMUX_PACKAGES}"/packages/
-		else
-			echo "[!] Package '$(basename "$pkg")' already exists in build environment. Skipping."
-		fi
-	done
-
-	echo "[*] Copying packages from './x11-packages' to build environment..."
-	for pkg in $(find "$REPOROOT"/x11-packages/packages -mindepth 1 -maxdepth 1 -type d); do
-		PKG_DIR="${BUILDER_HOME}/${X11_PACKAGES}/packages/$(basename "$pkg")"
-		if docker exec "$CONTAINER_NAME" [ ! -d "${PKG_DIR}" ]; then
-			# docker cp -a does not work, discussed here: https://github.com/moby/moby/issues/34142
-			docker cp "$pkg" "$CONTAINER_NAME:${BUILDER_HOME}/${TERMUX_PACKAGES}"/packages/
+			docker cp "$pkg" "$CONTAINER_NAME:${BUILDER_HOME}/${BUILD_ENVIRONMENT}"/packages/
 		else
 			echo "[!] Package '$(basename "$pkg")' already exists in build environment. Skipping."
 		fi
