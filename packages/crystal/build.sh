@@ -46,10 +46,11 @@ termux_step_make() {
 		`$TERMUX_PKG_HOSTBUILD_DIR/bin/llvm-config --libs --system-libs --ldflags` \
 		-lstdc++ -lpcre -lm -lgc -lpthread -levent -lrt -ldl
 
-	[ -d "shards" ] || \
-		git clone "https://github.com/crystal-lang/shards.git" && \
-		git -C shards pull && \
+	if [ -d "shards" ]; then
+		git clone https://github.com/crystal-lang/shards.git
+		git -C shards pull
 		git -C shards reset --hard ff94dd2ee46791e8e331f725fa1e4acdc13d5e9f
+	fi
 
 	cd shards
 	make release=1 CRYSTAL=$TERMUX_PKG_HOSTBUILD_DIR/crystal-host/bin/crystal SHARDS=false
