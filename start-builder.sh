@@ -84,7 +84,7 @@ fi
 	PACKAGES=$(find "$REPOROOT"/packages -mindepth 1 -maxdepth 1 -type d)
 	PACKAGES+=" $(find "$REPOROOT"/x11-packages/packages -mindepth 1 -maxdepth 1 -type d)"
 	echo "[*] Copying packages from './packages' to build environment..."
-	for pkg in ${PACKAGES}; do
+	for pkg in "${PACKAGES}"; do
 		PKG_DIR="${BUILDER_HOME}/${BUILD_ENVIRONMENT}/packages/$(basename "$pkg")"
 		if docker exec "$CONTAINER_NAME" [ ! -d "${PKG_DIR}" ]; then
 			# docker cp -a does not work, discussed here: https://github.com/moby/moby/issues/34142
