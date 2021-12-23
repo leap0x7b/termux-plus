@@ -81,7 +81,7 @@ fi
 		fi
 	fi
 
-	PACKAGES="$(find "$REPOROOT"/packages -mindepth 1 -maxdepth 1 -type d)"
+	PACKAGES=$(find "$REPOROOT"/packages -mindepth 1 -maxdepth 1 -type d)
 	PACKAGES+=" $(find "$REPOROOT"/x11-packages/packages -mindepth 1 -maxdepth 1 -type d)"
 	echo "[*] Copying packages from './packages' to build environment..."
 	for pkg in ${PACKAGES}; do
