@@ -1,4 +1,4 @@
-<img align="left" width="128px" height="128px" src="assets/logo.png">
+<img align="left" width="96px" height="96px" src="assets/logo.png">
 
 # Termux Plus
 Additional packages for Termux.
@@ -13,8 +13,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/leapofazzam123/termux-plus
 
 ## Contributing
 If you contributed to the official Termux package repository before,
-the directory structure should be familiar. You can read [CONTRIBUTING.md]
-and [Termux Developer Wiki] for more information.
+the directory structure should be familiar, as Termux Plus uses the
+same structure as the official Termux package repository. You can
+read the [developer wiki] for more information about contributing to
+Termux Plus.
 
-[CONTRIBUTING.md]: https://github.com/termux/termux-packages/blob/master/CONTRIBUTING.md
-[Termux Developer Wiki]: https://github.com/termux/termux-packages/wiki
+[developer wiki]: https://github.com/termux/termux-packages/wiki
