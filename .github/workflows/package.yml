@@ -148,7 +148,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Get *.deb files
       uses: actions/download-artifact@v2
-    - name: Upload to gh-pages branch
+    - name: Creating build directory
       run: |
         for archive in termux-plus-*.tar; do
           tar xf "$archive"
@@ -159,3 +159,8 @@ jobs:
           cp $filename tmp/input
         done
         termux-apt-repo tmp/input tmp/output plus apt
+    - name: Deploy to gh-pages branch
+      uses: JamesIves/github-pages-deploy-action@4.1.7
+      with:
+        branch: gh-pages
+        folder: tmp/output
