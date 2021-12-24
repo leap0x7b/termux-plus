@@ -8,3 +8,4 @@ TERMUX_PKG_SRCURL=https://herbstluftwm.org/tarballs/herbstluftwm-${TERMUX_PKG_VE
 TERMUX_PKG_SHA256=0ba7b1bd02966e6eefe27805753082406a2d2954bc41fe040d1ccaaed25ec105
 TERMUX_PKG_DEPENDS="libx11, libxrandr, libxinerama, libxext, libxft, freetype"
 TERMUX_PKG_BUILD_DEPENDS="xorgproto"
+TERMUX_PKG_EXTRA_CONFIGURE_ARGS="-DCMAKE_INSTALL_SYSCONF_PREFIX=$PREFIX/etc"
