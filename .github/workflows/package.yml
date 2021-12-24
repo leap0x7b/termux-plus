@@ -150,10 +150,6 @@ jobs:
       uses: actions/download-artifact@v2
     - name: Creating build directory
       run: |
-        ls -R
-        for archive in termux-plus-*.tar; do
-          tar xf "$archive"
-        done
         pip install termux-apt-repo
         mkdir tmp/input tmp/output
         for filename in $(cat output/built_packages.txt | sed -E 's/(..*)/output\/\1_\*.deb output\/\1-static_\*.deb/g'); do
