@@ -150,6 +150,7 @@ jobs:
       uses: actions/download-artifact@v2
     - name: Creating build directory
       run: |
+        ls -R
         for archive in termux-plus-*.tar; do
           tar xf "$archive"
         done
