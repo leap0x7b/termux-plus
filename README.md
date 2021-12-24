@@ -1,4 +1,4 @@
-<img align="left" width="256px" height="256px" src="assets/logo.png">
+<img align="left" width="128px" height="128px" src="assets/logo.png">
 
 # Termux Plus
 Additional packages for Termux.

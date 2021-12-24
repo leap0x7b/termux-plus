@@ -148,29 +148,14 @@ jobs:
       uses: actions/checkout@v2
     - name: Get *.deb files
       uses: actions/download-artifact@v2
-      with:
-        path: ./
     - name: Upload to gh-pages branch
-      env:
-        REPOSITORY_NAME: termux-x11
-        REPOSITORY_DISTRIBUTION: x11
       run: |
-        for archive in termux-plus-*/*.tar; do
+        for archive in termux-plus-*.tar; do
           tar xf "$archive"
         done
-
-        # Upload file to temporary directory.
         pip install termux-apt-repo
-        git config user.name 'Termux Plus CI'
-        git config user.email 'place@hol.der'
-        git fetch --all
-        git checkout gh-pages || git checkout --orphan gh-pages
-        rm -rf $(ls -a | grep -v '^\.git$' | grep -v '^\.\.$' | grep -v '^\.$' | grep -v '^output$')
-        mkdir /tmp/input
+        mkdir tmp/input tmp/output
         for filename in $(cat output/built_packages.txt | sed -E 's/(..*)/output\/\1_\*.deb output\/\1-static_\*.deb/g'); do
-          cp $filename /tmp/input
+          cp $filename tmp/input
         done
-        termux-apt-repo /tmp/input . plus apt
-        rm -rf /tmp/input output
-        git commit -m "Build packages from $HEAD_COMMIT"
-        git push origin gh-pages
+        termux-apt-repo tmp/input tmp/output plus apt
