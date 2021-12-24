@@ -17,7 +17,7 @@
 ##  limitations under the License.
 ##
 
-set -euxv
+set -eu
 
 SCRIPT_NAME=$(basename "$0")
 REPOROOT=$(dirname "$(realpath "$0")")
